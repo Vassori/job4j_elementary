@@ -14,9 +14,9 @@ public class FitTest {
     }
 
     @Test
-    public void whenWomanWeight170Then69() {
-        short height = 170;
-        double expected = 69;
+    public void whenWomanWeight170Then63Dot25() {
+        short height = 165;
+        double expected = 63.25;
         double out = Fit.womanWeight(height);
         Assert.assertEquals(expected, out, 0.01);
     }
