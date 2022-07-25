@@ -28,4 +28,12 @@ class DummyBotTest {
         String expected = "Это ставит меня в тупик. Задайте другой вопрос.";
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenInNullUnknownBot() {
+        String in = "?";
+        String result = DummyBot.answer(in);
+        String expected = "Это ставит меня в тупик. Задайте другой вопрос.";
+        assertThat(result).isEqualTo(expected);
+    }
 }
