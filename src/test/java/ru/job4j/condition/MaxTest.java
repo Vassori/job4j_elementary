@@ -27,8 +27,8 @@ class MaxTest {
     public void whenMax1To2Then1() {
         int left = 1;
         int right = 1;
-        int resultt = Max.max(left, right);
+        int result = Max.max(left, right);
         int expected = 1;
-        assertThat(resultt).isEqualTo(expected);
+        assertThat(result).isEqualTo(expected);
     }
 }
