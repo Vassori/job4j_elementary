@@ -16,8 +16,8 @@ class CounterTest {
 
     @Test
     public void whenSumEvenNumbersFromZeroToZeroThenZero() {
-        int start = 0;
-        int finish = 0;
+        int start = -10;
+        int finish = 10;
         int result = Counter.sumByEven(start, finish);
         int expected = 0;
         assertThat(result).isEqualTo(expected);
