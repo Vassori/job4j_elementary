@@ -29,7 +29,7 @@ class CheckTest {
     @Test
     public void whenDataNotMonoByFalseThenFalse() {
         boolean[] data = new boolean[] {false, true, false};
-        boolean result = Check.mono(data);
+        boolean result = (Check.mono(data));
         assertThat(result).isFalse();
     }
 }
