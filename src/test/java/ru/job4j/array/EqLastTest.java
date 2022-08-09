@@ -17,7 +17,7 @@ class EqLastTest {
     public void whenNotEq() {
         int[] left = {1, 2, 3};
         int[] right = {3, 3, 4};
-        boolean result = EqLast.check(left, right);
+        boolean result = (EqLast.check(left, right));
         assertThat(result).isFalse();
     }
 }
