@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.array;
 
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
@@ -24,7 +24,7 @@ class MinTest {
     @Test
     public void whenMiddleMin() {
         int[] array = new int[] {10, 2, 5};
-        int result = Min.findMin(array);
+        int result = (Min.findMin(array));
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
