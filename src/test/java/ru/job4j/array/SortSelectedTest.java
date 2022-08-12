@@ -7,7 +7,7 @@ class SortSelectedTest {
 
     @Test
     public void whenSortArray5Elements() {
-        int[] data = new int[] {3, 4, 1, 2, 5};
+        int[] data = {3, 4, 1, 2, 5};
         int[] result = SortSelected.sort(data);
         int[] expected = new int[] {1, 2, 3, 4, 5};
         assertThat(result).containsExactly(expected);
