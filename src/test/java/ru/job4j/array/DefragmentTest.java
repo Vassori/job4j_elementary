@@ -10,7 +10,7 @@ class DefragmentTest {
         String[] input = {null, "I"};
         String[] result = Defragment.compress(input);
         String[] expected = {"I", null};
-        assertThat(result).containsExactly(expected);
+        assertThat((result)).containsExactly(expected);
     }
 
     @Test
