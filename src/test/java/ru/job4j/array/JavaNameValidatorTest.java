@@ -53,6 +53,6 @@ class JavaNameValidatorTest {
 
     @Test
     void whenFirstCharacterLatticeInvalid() {
-        assertThat(isNameValid("_First#User")).isFalse();
+        assertThat(isNameValid("first#User")).isFalse();
     }
 }
