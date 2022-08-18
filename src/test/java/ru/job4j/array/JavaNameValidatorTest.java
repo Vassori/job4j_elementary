@@ -50,4 +50,9 @@ class JavaNameValidatorTest {
     void whenFirstCharacterLowLineInvalid() {
         assertThat(isNameValid("_FirstUser")).isFalse();
     }
+
+    @Test
+    void whenFirstCharacterLatticeInvalid() {
+        assertThat(isNameValid("_First#User")).isFalse();
+    }
 }
