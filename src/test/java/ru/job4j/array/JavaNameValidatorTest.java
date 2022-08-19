@@ -58,6 +58,6 @@ class JavaNameValidatorTest {
 
     @Test
     void whenLatticeInsideTheNameInvalid() {
-        assertThat(isNameValid("first#User")).isFalse();
+        assertThat(isNameValid("first###User")).isFalse();
     }
 }
