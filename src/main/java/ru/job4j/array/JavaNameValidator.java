@@ -4,7 +4,7 @@ import static java.lang.Character.isDigit;
 
 public class JavaNameValidator {
     public static boolean isNameValid(String name) {
-        boolean isValid = !name.isEmpty() && name.codePointAt(0) > 96 && name.codePointAt(0) < 123;
+        boolean isValid = (!name.isEmpty() && name.codePointAt(0) > 96 && name.codePointAt(0) < 123);
         for (int index = 1; index < name.length(); index++) {
             int code = name.codePointAt(index);
             if (!isSpecialSymbol(code) && !isUpperLatinLetter(code) && !isLowerLatinLetter(code) && !isDigit(code)) {
