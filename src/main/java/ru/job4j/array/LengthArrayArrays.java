@@ -8,8 +8,8 @@ public class LengthArrayArrays {
                 {3, 3, 3},
                 {4, 4, 4, 4}
         };
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println("Размер вложенного массива равен: " + numbers[i].length);
+        for (int[] meaning : numbers) {
+            System.out.println("Размер вложенного массива равен: " + meaning.length);
         }
     }
 }
