@@ -9,21 +9,12 @@ public class SimpleStringEncoder {
             if (input.charAt(i) == symbol) {
                 counter++;
             } else {
-                if (counter == 1) {
-                    result += String.valueOf(symbol);
-                    symbol = input.charAt(i);
-                } else {
-                    result += String.valueOf(symbol) + counter;
-                    symbol = input.charAt(i);
-                    counter = 1;
-                }
+                result += String.valueOf(symbol) + (counter > 1 ? counter : "");
+                symbol = input.charAt(i);
+                counter = 1;
             }
         }
-        if (counter == 1) {
-            result += String.valueOf(symbol);
-        } else {
-            result += String.valueOf(symbol) + counter;
-        }
+        result += String.valueOf(symbol) + (counter > 1 ? counter : "");
         return result;
     }
 }
