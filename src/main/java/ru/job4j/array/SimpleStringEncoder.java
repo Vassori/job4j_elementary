@@ -14,7 +14,6 @@ public class SimpleStringEncoder {
                 counter = 1;
             }
         }
-        result += String.valueOf(symbol) + (counter > 1 ? counter : "");
-        return result;
+        return result + symbol + (counter > 1 ? counter : "");
     }
 }
