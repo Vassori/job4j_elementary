@@ -17,9 +17,9 @@ public class Fit {
         int height = in.nextInt();
         in.close();
 
-        double rslMan = Fit.manWeight(height);
-        System.out.printf("Man %d cm is %.2f kg%n", height, rslMan);
-        double rslWoman = Fit.womanWeight(height);
-        System.out.printf("Woman %d cm is %.2f kg%n", height, rslWoman);
+        double resultMan = Fit.manWeight(height);
+        System.out.printf("Man %d cm is %.2f kg%n", height, resultMan);
+        double resultWoman = Fit.womanWeight(height);
+        System.out.printf("Woman %d cm is %.2f kg%n", height, resultWoman);
     }
 }
